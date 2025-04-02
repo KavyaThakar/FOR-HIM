@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(244, 127, 197);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.hearts-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+.heart-container {
+    margin-top: 20%;
+    font-size: 50px;
+    cursor: pointer;
+    animation: pop 1s infinite;
+}
+@keyframes pop {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.message-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.message {
+    font-size: 24px;
+    color: rgb(231, 47, 152);
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: lightcoral;
+}
+.final-image {
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(100vh) scale(0.5); }
+    100% { transform: translateY(-10vh) scale(1); }
+}
